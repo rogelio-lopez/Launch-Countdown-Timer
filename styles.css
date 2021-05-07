@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+*{
+    /* Primary */
+    --grayish-blue: #8486a9;
+    --soft-red: #fb6087;
+
+    /* Neutral */
+    --white: #ffffff;
+    --dark-desaturated-blue: #343650;
+    --very-dark-blue: #1e1f29;
+    --mostly-black-blue: #191a24;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+}
+
+.title{
+    position: absolute;
+    width: 440px;
+    height: 29px;
+
+    top: 135px;
+}
+.title > h1{
+    position: absolute;
+    height: 29px;
+    left: 1.02%;
+    right: 1.02%;
+    top: calc(50% - 29px/2);
+
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 688px;
+    height: 184px;
+    top: 268px;
+}
+.timer-object{
+    width: 148px;
+    height: 184px;
+    left: 376px;
+    top: 268px;
+}
+.timer{
+    position: relative;
+    height: 140px;
+    width: 148px;
+    border-radius: 8px;
+    background: var(--dark-desaturated-blue);
+    box-shadow: 0px 10px 0px 0px var(--mostly-black-blue);
+    overflow: hidden;
+}
+.timer-top{
+    height: 70px;
+    width: 148px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    border-radius: 0px 0px 8px 8px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.time{
+    margin: 0;
+    position: absolute;
+    height: 71px;
+    left: 15.2%;
+    right: 14.53%;
+    top: calc(50% - 60px/2 - 5.5px);
+
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 71px;
+
+    text-align: center;
+    letter-spacing: -2.4px;
+
+    color: #FB5E84;
+}
+.timer-title{
+    height: 18px;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 5.91875px;
+    text-transform: uppercase;
+
+    color: #8385A9;
+}
+
+/* Extra decorations on timer */
+.oval1{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    left: -5px;
+    bottom: 46%;
+
+    border-radius: 50%;
+    background: #191A23;
+}
+.oval2{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    right: -5px;
+    bottom: 46%;
+
+    border-radius: 50%;
+    background: #191A23;
+}
+.line{
+    position: absolute;
+    width: 100%;
+    height: 569px;
+    top: 3px;
+
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+
+/* Socials */
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 269px;
+    left: 0;
+    top: 80%;
+    background-image: url('./images/pattern-hills.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding: 0;
+    list-style-type: none;
+}
+li:hover{
+    cursor: pointer;
+    color: var(--soft-red);
+}
